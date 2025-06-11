@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Open Map</string>
+    <string name="clients_count">Клиентов: %1$d</string>
+    <string name="rtcm_label">RTCM:</string>
 </resources>
