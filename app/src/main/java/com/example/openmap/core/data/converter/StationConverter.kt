@@ -1,10 +1,10 @@
-package com.example.openmap.core.data.convertor
+package com.example.openmap.core.data.converter
 
 import com.example.openmap.core.data.dto.StationResponseDto
 import com.example.openmap.core.domain.model.Position
 import com.example.openmap.core.domain.model.Station
 
-fun StationResponseDto.convertToStation(): List<Station> {
+fun StationResponseDto.convertToDomain(): List<Station> {
     return this.data.map { data ->
         Station(
             cid = data.cid,
