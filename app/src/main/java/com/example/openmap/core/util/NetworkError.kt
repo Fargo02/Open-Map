@@ -9,5 +9,5 @@ sealed class NetworkError(override val message: String) : Throwable(message = me
 
     class BadRequest : NetworkError("Ресурс не найден")
 
-    class NoInternet : NetworkError("No internet connection")
+    class NoInternet : NetworkError("Нет подключения к интернету")
 }

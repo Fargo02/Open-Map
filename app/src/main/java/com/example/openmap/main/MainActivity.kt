@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.openmap.map.presentation.MapScreen
+import com.example.openmap.map.presentation.MapScreenRoute
 import com.example.openmap.ui.theme.OpenMapTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             OpenMapTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MapScreen(modifier = Modifier.padding(innerPadding))
+                    MapScreenRoute(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
